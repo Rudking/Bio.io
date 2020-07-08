@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:radial-gradient(circle,rgba(2,0,36,1),0%,
+    rgba(55,55,170,1)56%,rgba(4,125,198,1)79%,rgba(198,52,199,1)88%,rgba(0,212,255,1)100%);
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main{
+    width:100;
+    height: 100vh;
+}
+
+.card{
+    width:350px;
+    height:400px;
+    position: relative;
+    box-shadow: 2px 2px 10px rgb(54, 29, 29);
+    overflow: hidden; 
+    background: #ffffff;
+}
+
+.content{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.content h1{
+    margin: 10px 0px;
+}
+
+.content p{
+    margin:10px 60px;
+}
+
+.icon{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgb(19, 18, 18);
+    color: #ffffff;
+    transform:translateX(-95%);
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.icon i{
+    margin:10px 0px;
+}
+
+.card:hover > .icon{
+    transform: translateX(0);
+}
+
+.fa-instagram:hover{
+    color: #ffffff;
+    background: linear-gradient(45deg, #3110ec 10%,#e90a4d 40%,#e9a70c);
+    box-shadow: 0 0 20px  #f35757;
+}
+
+
+.fa-facebook-f:hover{
+    color: #ffffff;
+    background: linear-gradient(45deg, #0da1e6,#117492);
+    box-shadow: 0 0 20px #5283ee;
+}
+
+
+.fa-github:hover{
+    color: #b8b3b3;
+    background: linear-gradient(45deg, #112211,#121212);
+    box-shadow: 0 0 20px  #b8b3b3;
+}
+
+
+.fa-linkedin:hover{
+    color: #ffffff;
+    background: linear-gradient(45deg, #0b47b8,#099999);
+    box-shadow: 0 0 20px  #0f24dd;
+}
+
+
+
